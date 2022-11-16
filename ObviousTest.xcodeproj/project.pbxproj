@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		42A5808D2924F29600C5A317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A5808C2924F29600C5A317 /* AppDelegate.swift */; };
 		42A5808F2924F29600C5A317 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A5808E2924F29600C5A317 /* SceneDelegate.swift */; };
-		42A580912924F29600C5A317 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580902924F29600C5A317 /* ViewController.swift */; };
+		42A580912924F29600C5A317 /* ImageGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580902924F29600C5A317 /* ImageGridViewController.swift */; };
 		42A580942924F29600C5A317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A580922924F29600C5A317 /* Main.storyboard */; };
 		42A580962924F29700C5A317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42A580952924F29700C5A317 /* Assets.xcassets */; };
 		42A580992924F29700C5A317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A580972924F29700C5A317 /* LaunchScreen.storyboard */; };
 		42A580A42924F29700C5A317 /* ObviousTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580A32924F29700C5A317 /* ObviousTestTests.swift */; };
 		42A580AE2924F29700C5A317 /* ObviousTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580AD2924F29700C5A317 /* ObviousTestUITests.swift */; };
 		42A580B02924F29700C5A317 /* ObviousTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580AF2924F29700C5A317 /* ObviousTestUITestsLaunchTests.swift */; };
+		42A580C22924FAC400C5A317 /* ImageGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580C02924FAC400C5A317 /* ImageGridCollectionViewCell.swift */; };
+		42A580C32924FAC400C5A317 /* ImageGridCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42A580C12924FAC400C5A317 /* ImageGridCollectionViewCell.xib */; };
+		42A580C62924FB6300C5A317 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580C52924FB6300C5A317 /* ReusableView.swift */; };
+		42A580C92924FE1100C5A317 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580C82924FE1100C5A317 /* AppConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,7 @@
 		42A580892924F29600C5A317 /* ObviousTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObviousTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A5808C2924F29600C5A317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42A5808E2924F29600C5A317 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		42A580902924F29600C5A317 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42A580902924F29600C5A317 /* ImageGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridViewController.swift; sourceTree = "<group>"; };
 		42A580932924F29600C5A317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42A580952924F29700C5A317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42A580982924F29700C5A317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		42A580A92924F29700C5A317 /* ObviousTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObviousTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A580AD2924F29700C5A317 /* ObviousTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObviousTestUITests.swift; sourceTree = "<group>"; };
 		42A580AF2924F29700C5A317 /* ObviousTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObviousTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		42A580C02924FAC400C5A317 /* ImageGridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridCollectionViewCell.swift; sourceTree = "<group>"; };
+		42A580C12924FAC400C5A317 /* ImageGridCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageGridCollectionViewCell.xib; sourceTree = "<group>"; };
+		42A580C52924FB6300C5A317 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		42A580C82924FE1100C5A317 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,11 @@
 		42A5808B2924F29600C5A317 /* ObviousTest */ = {
 			isa = PBXGroup;
 			children = (
+				42A580C72924FDD100C5A317 /* Utils */,
+				42A580BE2924FA7D00C5A317 /* Views */,
+				42A580BC2924F8EA00C5A317 /* Screens */,
 				42A5808C2924F29600C5A317 /* AppDelegate.swift */,
 				42A5808E2924F29600C5A317 /* SceneDelegate.swift */,
-				42A580902924F29600C5A317 /* ViewController.swift */,
 				42A580922924F29600C5A317 /* Main.storyboard */,
 				42A580952924F29700C5A317 /* Assets.xcassets */,
 				42A580972924F29700C5A317 /* LaunchScreen.storyboard */,
@@ -125,6 +135,56 @@
 				42A580AF2924F29700C5A317 /* ObviousTestUITestsLaunchTests.swift */,
 			);
 			path = ObviousTestUITests;
+			sourceTree = "<group>";
+		};
+		42A580BC2924F8EA00C5A317 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				42A580BD2924F8FB00C5A317 /* ImageGrid */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		42A580BD2924F8FB00C5A317 /* ImageGrid */ = {
+			isa = PBXGroup;
+			children = (
+				42A580902924F29600C5A317 /* ImageGridViewController.swift */,
+			);
+			path = ImageGrid;
+			sourceTree = "<group>";
+		};
+		42A580BE2924FA7D00C5A317 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42A580C42924FB0200C5A317 /* Protocols */,
+				42A580BF2924FA8700C5A317 /* CollectionViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42A580BF2924FA8700C5A317 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				42A580C02924FAC400C5A317 /* ImageGridCollectionViewCell.swift */,
+				42A580C12924FAC400C5A317 /* ImageGridCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		42A580C42924FB0200C5A317 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				42A580C52924FB6300C5A317 /* ReusableView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		42A580C72924FDD100C5A317 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				42A580C82924FE1100C5A317 /* AppConstants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A580C32924FAC400C5A317 /* ImageGridCollectionViewCell.xib in Resources */,
 				42A580992924F29700C5A317 /* LaunchScreen.storyboard in Resources */,
 				42A580962924F29700C5A317 /* Assets.xcassets in Resources */,
 				42A580942924F29600C5A317 /* Main.storyboard in Resources */,
@@ -258,7 +319,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42A580912924F29600C5A317 /* ViewController.swift in Sources */,
+				42A580C22924FAC400C5A317 /* ImageGridCollectionViewCell.swift in Sources */,
+				42A580C92924FE1100C5A317 /* AppConstants.swift in Sources */,
+				42A580C62924FB6300C5A317 /* ReusableView.swift in Sources */,
+				42A580912924F29600C5A317 /* ImageGridViewController.swift in Sources */,
 				42A5808D2924F29600C5A317 /* AppDelegate.swift in Sources */,
 				42A5808F2924F29600C5A317 /* SceneDelegate.swift in Sources */,
 			);
