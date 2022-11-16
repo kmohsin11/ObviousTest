@@ -11,9 +11,12 @@ class ImageGridViewController: UIViewController {
   
   @IBOutlet var imageCollectionview: UICollectionView!
   
+  let viewModel = ImageGridViewModel()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     setupUI()
+    viewModel.fetchImageData()
   }
   
   private func setupUI() {

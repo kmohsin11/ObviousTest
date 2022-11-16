@@ -20,6 +20,12 @@
 		42A580C32924FAC400C5A317 /* ImageGridCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42A580C12924FAC400C5A317 /* ImageGridCollectionViewCell.xib */; };
 		42A580C62924FB6300C5A317 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580C52924FB6300C5A317 /* ReusableView.swift */; };
 		42A580C92924FE1100C5A317 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580C82924FE1100C5A317 /* AppConstants.swift */; };
+		42A580CB2924FF3A00C5A317 /* ImageGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580CA2924FF3A00C5A317 /* ImageGridViewModel.swift */; };
+		42A580CF2924FFB300C5A317 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580CE2924FFB300C5A317 /* APIRequest.swift */; };
+		42A580D12925000900C5A317 /* ImageGridAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580D02925000800C5A317 /* ImageGridAPIRequest.swift */; };
+		42A580D42925008300C5A317 /* APIOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580D32925008200C5A317 /* APIOperation.swift */; };
+		42A580D7292500A200C5A317 /* ImageGridModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580D6292500A200C5A317 /* ImageGridModels.swift */; };
+		42A580D9292501B500C5A317 /* APIOperationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580D8292501B500C5A317 /* APIOperationSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,12 @@
 		42A580C12924FAC400C5A317 /* ImageGridCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageGridCollectionViewCell.xib; sourceTree = "<group>"; };
 		42A580C52924FB6300C5A317 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		42A580C82924FE1100C5A317 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		42A580CA2924FF3A00C5A317 /* ImageGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridViewModel.swift; sourceTree = "<group>"; };
+		42A580CE2924FFB300C5A317 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		42A580D02925000800C5A317 /* ImageGridAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridAPIRequest.swift; sourceTree = "<group>"; };
+		42A580D32925008200C5A317 /* APIOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIOperation.swift; sourceTree = "<group>"; };
+		42A580D6292500A200C5A317 /* ImageGridModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridModels.swift; sourceTree = "<group>"; };
+		42A580D8292501B500C5A317 /* APIOperationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIOperationSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +119,7 @@
 		42A5808B2924F29600C5A317 /* ObviousTest */ = {
 			isa = PBXGroup;
 			children = (
+				42A580CC2924FF6500C5A317 /* Network */,
 				42A580C72924FDD100C5A317 /* Utils */,
 				42A580BE2924FA7D00C5A317 /* Views */,
 				42A580BC2924F8EA00C5A317 /* Screens */,
@@ -149,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				42A580902924F29600C5A317 /* ImageGridViewController.swift */,
+				42A580CA2924FF3A00C5A317 /* ImageGridViewModel.swift */,
 			);
 			path = ImageGrid;
 			sourceTree = "<group>";
@@ -185,6 +199,42 @@
 				42A580C82924FE1100C5A317 /* AppConstants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		42A580CC2924FF6500C5A317 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				42A580D52925008700C5A317 /* APIModels */,
+				42A580D22925006C00C5A317 /* APIOperations */,
+				42A580CD2924FF7300C5A317 /* APIRequests */,
+				42A580D8292501B500C5A317 /* APIOperationSession.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		42A580CD2924FF7300C5A317 /* APIRequests */ = {
+			isa = PBXGroup;
+			children = (
+				42A580CE2924FFB300C5A317 /* APIRequest.swift */,
+				42A580D02925000800C5A317 /* ImageGridAPIRequest.swift */,
+			);
+			path = APIRequests;
+			sourceTree = "<group>";
+		};
+		42A580D22925006C00C5A317 /* APIOperations */ = {
+			isa = PBXGroup;
+			children = (
+				42A580D32925008200C5A317 /* APIOperation.swift */,
+			);
+			path = APIOperations;
+			sourceTree = "<group>";
+		};
+		42A580D52925008700C5A317 /* APIModels */ = {
+			isa = PBXGroup;
+			children = (
+				42A580D6292500A200C5A317 /* ImageGridModels.swift */,
+			);
+			path = APIModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +375,12 @@
 				42A580912924F29600C5A317 /* ImageGridViewController.swift in Sources */,
 				42A5808D2924F29600C5A317 /* AppDelegate.swift in Sources */,
 				42A5808F2924F29600C5A317 /* SceneDelegate.swift in Sources */,
+				42A580D7292500A200C5A317 /* ImageGridModels.swift in Sources */,
+				42A580D42925008300C5A317 /* APIOperation.swift in Sources */,
+				42A580D12925000900C5A317 /* ImageGridAPIRequest.swift in Sources */,
+				42A580CF2924FFB300C5A317 /* APIRequest.swift in Sources */,
+				42A580CB2924FF3A00C5A317 /* ImageGridViewModel.swift in Sources */,
+				42A580D9292501B500C5A317 /* APIOperationSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
