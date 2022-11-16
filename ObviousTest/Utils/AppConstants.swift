@@ -11,4 +11,8 @@ struct AppConstants {
   static var getPhoneWidth: CGFloat {
     return UIScreen.main.bounds.width
   }
+  
+  static var imageCacheSize: Int {
+    return 100 * 1024 * 1024
+  }
 }

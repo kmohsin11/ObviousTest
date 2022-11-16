@@ -6,8 +6,13 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 class ImageGridViewModel {
+  
+  let imageData = BehaviorRelay<[ImageData]?>(value: nil)
+  
   func fetchImageData() {
     let operation = APIBaseOperation(ImageGridAPIRequest())
     operation.startRequest { result in
@@ -16,11 +21,11 @@ class ImageGridViewModel {
         let jsonDecoder = JSONDecoder()
         do {
           let imageData = try jsonDecoder.decode([ImageData].self, from: data)
-          print(imageData)
+          self.imageData.accept(imageData)
         } catch {
         }
       case .failure(_):
-        print("Failure")
+        self.imageData.accept(nil)
       }
     }
   }
