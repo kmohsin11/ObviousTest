@@ -10,6 +10,7 @@ target 'ObviousTest' do
   pod 'Kingfisher', '~> 7.0'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'Hero'
 
   target 'ObviousTestTests' do
     inherit! :search_paths

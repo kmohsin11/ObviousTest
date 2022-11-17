@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import Hero
 
 class ImageGridViewController: UIViewController {
   
@@ -33,6 +34,9 @@ class ImageGridViewController: UIViewController {
   }
   
   private func setupUI() {
+    isHeroEnabled = true
+    navigationController?.isHeroEnabled = true
+    navigationController?.heroNavigationAnimationType = .selectBy(presenting: .zoom, dismissing: .zoomOut)
     imageCollectionview.delegate = self
     imageCollectionview.dataSource = self
     imageCollectionview.register(UINib(nibName: ImageGridCollectionViewCell.reuseIdentifier, bundle: .main), forCellWithReuseIdentifier: ImageGridCollectionViewCell.reuseIdentifier)

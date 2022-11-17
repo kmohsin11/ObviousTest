@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import Hero
 
 class ImageDetailsViewController: UIViewController {
   
@@ -28,6 +29,7 @@ class ImageDetailsViewController: UIViewController {
   }
   
   private func setupUI() {
+    isHeroEnabled = true
     imageDetailCollectionView.delegate = self
     imageDetailCollectionView.dataSource = self
     imageDetailCollectionView.register(UINib(nibName: ImageDetailCollectionViewCell.reuseIdentifier, bundle: .main), forCellWithReuseIdentifier: ImageDetailCollectionViewCell.reuseIdentifier)
