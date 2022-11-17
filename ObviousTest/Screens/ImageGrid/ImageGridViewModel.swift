@@ -12,6 +12,7 @@ import RxCocoa
 class ImageGridViewModel {
   
   let imageData = BehaviorRelay<[ImageData]?>(value: nil)
+  var currentIndex = 0
   
   func fetchImageData() {
     let operation = APIBaseOperation(ImageGridAPIRequest())

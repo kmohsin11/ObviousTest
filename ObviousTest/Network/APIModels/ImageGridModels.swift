@@ -9,12 +9,14 @@ import Foundation
 
 struct ImageData: Decodable {
   var title: String
+  var explanation: String?
   var url: String?
   var hdurl: String?
   var date: Date?
   
   enum CodingKeys: String, CodingKey {
     case title
+    case explanation
     case url
     case hdurl
     case date
@@ -23,6 +25,7 @@ struct ImageData: Decodable {
   init(from decoder: Decoder) throws {
     let container = try decoder.container(keyedBy: CodingKeys.self)
     title = try container.decode(String.self, forKey: .title)
+    explanation = try container.decodeIfPresent(String.self, forKey: .explanation)
     url = try container.decodeIfPresent(String.self, forKey: .url)
     hdurl = try container.decodeIfPresent(String.self, forKey: .hdurl)
     if let dateString = try container.decodeIfPresent(String.self, forKey: .date) {

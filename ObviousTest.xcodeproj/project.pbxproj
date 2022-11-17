@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4277F55129265DA9000248F5 /* ImageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277F54F29265DA9000248F5 /* ImageDetailsViewController.swift */; };
+		4277F55229265DA9000248F5 /* ImageDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4277F55029265DA9000248F5 /* ImageDetailsViewController.xib */; };
+		4277F5592926673D000248F5 /* ImageDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277F5572926673D000248F5 /* ImageDetailCollectionViewCell.swift */; };
+		4277F55A2926673D000248F5 /* ImageDetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4277F5582926673D000248F5 /* ImageDetailCollectionViewCell.xib */; };
 		42A5808D2924F29600C5A317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A5808C2924F29600C5A317 /* AppDelegate.swift */; };
 		42A5808F2924F29600C5A317 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A5808E2924F29600C5A317 /* SceneDelegate.swift */; };
 		42A580912924F29600C5A317 /* ImageGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580902924F29600C5A317 /* ImageGridViewController.swift */; };
@@ -54,6 +58,10 @@
 		33AC8BB0B5715A3D441C82CD /* Pods-ObviousTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObviousTestTests.release.xcconfig"; path = "Target Support Files/Pods-ObviousTestTests/Pods-ObviousTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		3C663FE4CF950AE0C53CFE51 /* Pods-ObviousTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObviousTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ObviousTestTests/Pods-ObviousTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		424C41C00D2DD6441B8909B4 /* Pods-ObviousTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObviousTest.release.xcconfig"; path = "Target Support Files/Pods-ObviousTest/Pods-ObviousTest.release.xcconfig"; sourceTree = "<group>"; };
+		4277F54F29265DA9000248F5 /* ImageDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewController.swift; sourceTree = "<group>"; };
+		4277F55029265DA9000248F5 /* ImageDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageDetailsViewController.xib; sourceTree = "<group>"; };
+		4277F5572926673D000248F5 /* ImageDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		4277F5582926673D000248F5 /* ImageDetailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageDetailCollectionViewCell.xib; sourceTree = "<group>"; };
 		42A580892924F29600C5A317 /* ObviousTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObviousTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A5808C2924F29600C5A317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42A5808E2924F29600C5A317 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +119,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4277F54E29265D58000248F5 /* ImageDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4277F54F29265DA9000248F5 /* ImageDetailsViewController.swift */,
+				4277F55029265DA9000248F5 /* ImageDetailsViewController.xib */,
+			);
+			path = ImageDetail;
+			sourceTree = "<group>";
+		};
+		4277F5552926670A000248F5 /* ImageGridCell */ = {
+			isa = PBXGroup;
+			children = (
+				42A580C02924FAC400C5A317 /* ImageGridCollectionViewCell.swift */,
+				42A580C12924FAC400C5A317 /* ImageGridCollectionViewCell.xib */,
+			);
+			path = ImageGridCell;
+			sourceTree = "<group>";
+		};
+		4277F5562926671B000248F5 /* ImageDetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				4277F5572926673D000248F5 /* ImageDetailCollectionViewCell.swift */,
+				4277F5582926673D000248F5 /* ImageDetailCollectionViewCell.xib */,
+			);
+			path = ImageDetailCell;
+			sourceTree = "<group>";
+		};
 		42A580802924F29500C5A317 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +205,7 @@
 		42A580BC2924F8EA00C5A317 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				4277F54E29265D58000248F5 /* ImageDetail */,
 				42A580BD2924F8FB00C5A317 /* ImageGrid */,
 			);
 			path = Screens;
@@ -196,8 +232,8 @@
 		42A580BF2924FA8700C5A317 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				42A580C02924FAC400C5A317 /* ImageGridCollectionViewCell.swift */,
-				42A580C12924FAC400C5A317 /* ImageGridCollectionViewCell.xib */,
+				4277F5562926671B000248F5 /* ImageDetailCell */,
+				4277F5552926670A000248F5 /* ImageGridCell */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -264,7 +300,6 @@
 				3C663FE4CF950AE0C53CFE51 /* Pods-ObviousTestTests.debug.xcconfig */,
 				33AC8BB0B5715A3D441C82CD /* Pods-ObviousTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -390,7 +425,9 @@
 				42A580C32924FAC400C5A317 /* ImageGridCollectionViewCell.xib in Resources */,
 				42A580992924F29700C5A317 /* LaunchScreen.storyboard in Resources */,
 				42A580962924F29700C5A317 /* Assets.xcassets in Resources */,
+				4277F55A2926673D000248F5 /* ImageDetailCollectionViewCell.xib in Resources */,
 				42A580942924F29600C5A317 /* Main.storyboard in Resources */,
+				4277F55229265DA9000248F5 /* ImageDetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,8 +555,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4277F55129265DA9000248F5 /* ImageDetailsViewController.swift in Sources */,
 				42A580C22924FAC400C5A317 /* ImageGridCollectionViewCell.swift in Sources */,
 				42A580C92924FE1100C5A317 /* AppConstants.swift in Sources */,
+				4277F5592926673D000248F5 /* ImageDetailCollectionViewCell.swift in Sources */,
 				42A580C62924FB6300C5A317 /* ReusableView.swift in Sources */,
 				42A580912924F29600C5A317 /* ImageGridViewController.swift in Sources */,
 				42A5808D2924F29600C5A317 /* AppDelegate.swift in Sources */,
@@ -713,8 +752,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -742,8 +780,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

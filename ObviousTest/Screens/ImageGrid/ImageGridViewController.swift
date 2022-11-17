@@ -22,6 +22,16 @@ class ImageGridViewController: UIViewController {
     viewModel.fetchImageData()
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
+      navigationController?.setNavigationBarHidden(true, animated: true)
+  }
+
+  override func viewWillDisappear(_ animated: Bool) {
+      super.viewWillDisappear(animated)
+      navigationController?.setNavigationBarHidden(false, animated: false)
+  }
+  
   private func setupUI() {
     imageCollectionview.delegate = self
     imageCollectionview.dataSource = self
@@ -43,6 +53,12 @@ class ImageGridViewController: UIViewController {
 
 // MARK: UICollectionView Methods
 extension ImageGridViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+  
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    viewModel.currentIndex = indexPath.item
+    let vc = ImageDetailsViewController(viewModel)
+    navigationController?.pushViewController(vc, animated: true)
+  }
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
     return 2
