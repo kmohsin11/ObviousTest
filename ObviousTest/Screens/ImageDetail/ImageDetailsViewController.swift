@@ -34,7 +34,8 @@ class ImageDetailsViewController: UIViewController {
     imageDetailCollectionView.dataSource = self
     imageDetailCollectionView.register(UINib(nibName: ImageDetailCollectionViewCell.reuseIdentifier, bundle: .main), forCellWithReuseIdentifier: ImageDetailCollectionViewCell.reuseIdentifier)
     view.layoutIfNeeded()
-    imageDetailCollectionView.scrollRectToVisible(CGRect(x: CGFloat(viewModel.currentIndex) * AppConstants.getPhoneWidth, y: 0, width: AppConstants.getPhoneWidth, height: view.bounds.height), animated: false)
+    let rect = CGRect(x: CGFloat(viewModel.currentIndex) * AppConstants.getPhoneWidth + 15, y: 0, width: AppConstants.getPhoneWidth, height: view.bounds.height)
+    imageDetailCollectionView.scrollRectToVisible(rect, animated: false)
   }
 }
 
