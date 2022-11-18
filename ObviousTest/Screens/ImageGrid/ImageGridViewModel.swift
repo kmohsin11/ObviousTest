@@ -21,7 +21,10 @@ class ImageGridViewModel {
       case .success(let data):
         let jsonDecoder = JSONDecoder()
         do {
-          let imageData = try jsonDecoder.decode([ImageData].self, from: data)
+          var imageData = try jsonDecoder.decode([ImageData].self, from: data)
+          imageData.sort { first, second in
+            (first.date ?? Date()) > (second.date ?? Date())
+          }
           self.imageData.accept(imageData)
         } catch {
         }
