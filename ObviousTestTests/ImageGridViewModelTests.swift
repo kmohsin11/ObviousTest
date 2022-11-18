@@ -10,31 +10,6 @@ import RxSwift
 import RxCocoa
 @testable import ObviousTest
 
-class MockAPIOperationSession: APIOperationSession {
-  let error: APIError?
-  let responseFileName: String?
-  
-  init(error: APIError?, responseFileName: String?) {
-    self.error = error
-    self.responseFileName = responseFileName
-  }
-  
-  func startRequest(withOperation operation: ObviousTest.APIOperation, completionHandler: ((ObviousTest.APINetworkResult) -> Void)?) {
-    if let error = error {
-      completionHandler?(.failure(error))
-    } else {
-      if let url = Bundle(for: type(of: self)).url(forResource: responseFileName, withExtension: "json") {
-        do {
-          let data = try Data(contentsOf: url)
-          completionHandler?(.success(data))
-        } catch {
-          completionHandler?(.failure(.invalidResponse))
-        }
-      }
-    }
-  }
-}
-
 final class ImageGridViewModelTests: XCTestCase {
   
   let viewModel = ImageGridViewModel()

@@ -22,7 +22,13 @@ class ImageGridViewController: UIViewController {
     super.viewDidLoad()
     bindObservables()
     setupUI()
-    viewModel.fetchImageData()
+    let uiTesting = ProcessInfo.processInfo.arguments.contains(AppConstants.TextConstants.uiTesting.rawValue)
+    if uiTesting {
+      let sessionManager = MockAPIOperationSession(error: nil, responseFileName: "ImageDataCorrectResponse")
+      viewModel.fetchImageData(with: sessionManager)
+    } else {
+      viewModel.fetchImageData()
+    }
   }
   
   override func viewWillAppear(_ animated: Bool) {

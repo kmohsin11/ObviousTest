@@ -15,4 +15,8 @@ struct AppConstants {
   static var imageCacheSize: Int {
     return 100 * 1024 * 1024
   }
+  
+  enum TextConstants: String {
+    case uiTesting = "UITesting"
+  }
 }

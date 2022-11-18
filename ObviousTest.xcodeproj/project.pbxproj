@@ -10,6 +10,25 @@
 		4229B91429275EA200505EDA /* FeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4229B91329275EA200505EDA /* FeedbackGenerator.swift */; };
 		4229B919292775F900505EDA /* ImageDataInvalidResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 4229B918292775F900505EDA /* ImageDataInvalidResponse.json */; };
 		4229B91B2927760000505EDA /* ImageDataCorrectResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 4229B91A2927760000505EDA /* ImageDataCorrectResponse.json */; };
+		4229B91C2927874800505EDA /* ImageDataCorrectResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 4229B91A2927760000505EDA /* ImageDataCorrectResponse.json */; };
+		4229B91F2927878400505EDA /* MockAPIOperationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4229B91E2927878400505EDA /* MockAPIOperationSession.swift */; };
+		4229B92029278B5E00505EDA /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580C82924FE1100C5A317 /* AppConstants.swift */; };
+		4229B92129278B8F00505EDA /* MockAPIOperationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4229B91E2927878400505EDA /* MockAPIOperationSession.swift */; };
+		4229B92229278B8F00505EDA /* ImageGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580CA2924FF3A00C5A317 /* ImageGridViewModel.swift */; };
+		4229B92329278B9000505EDA /* MockAPIOperationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4229B91E2927878400505EDA /* MockAPIOperationSession.swift */; };
+		4229B92429278B9000505EDA /* ImageGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580CA2924FF3A00C5A317 /* ImageGridViewModel.swift */; };
+		4229B92529278B9400505EDA /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580C82924FE1100C5A317 /* AppConstants.swift */; };
+		4229B92629278BC100505EDA /* APIOperationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580D8292501B500C5A317 /* APIOperationSession.swift */; };
+		4229B92729278BC100505EDA /* APIOperationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580D8292501B500C5A317 /* APIOperationSession.swift */; };
+		4229B92829278BFB00505EDA /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580CE2924FFB300C5A317 /* APIRequest.swift */; };
+		4229B92929278BFB00505EDA /* ImageGridModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580D6292500A200C5A317 /* ImageGridModels.swift */; };
+		4229B92A29278BFB00505EDA /* APIOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580D32925008200C5A317 /* APIOperation.swift */; };
+		4229B92B29278BFC00505EDA /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580CE2924FFB300C5A317 /* APIRequest.swift */; };
+		4229B92C29278BFC00505EDA /* ImageGridModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580D6292500A200C5A317 /* ImageGridModels.swift */; };
+		4229B92D29278BFC00505EDA /* APIOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580D32925008200C5A317 /* APIOperation.swift */; };
+		4229B92E29278C1600505EDA /* ImageGridAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580D02925000800C5A317 /* ImageGridAPIRequest.swift */; };
+		4229B92F29278C1700505EDA /* ImageGridAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580D02925000800C5A317 /* ImageGridAPIRequest.swift */; };
+		4229B930292792C400505EDA /* ImageDataCorrectResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 4229B91A2927760000505EDA /* ImageDataCorrectResponse.json */; };
 		4277F55129265DA9000248F5 /* ImageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277F54F29265DA9000248F5 /* ImageDetailsViewController.swift */; };
 		4277F55229265DA9000248F5 /* ImageDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4277F55029265DA9000248F5 /* ImageDetailsViewController.xib */; };
 		4277F5592926673D000248F5 /* ImageDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277F5572926673D000248F5 /* ImageDetailCollectionViewCell.swift */; };
@@ -63,6 +82,7 @@
 		4229B91329275EA200505EDA /* FeedbackGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackGenerator.swift; sourceTree = "<group>"; };
 		4229B918292775F900505EDA /* ImageDataInvalidResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ImageDataInvalidResponse.json; sourceTree = "<group>"; };
 		4229B91A2927760000505EDA /* ImageDataCorrectResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ImageDataCorrectResponse.json; sourceTree = "<group>"; };
+		4229B91E2927878400505EDA /* MockAPIOperationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIOperationSession.swift; sourceTree = "<group>"; };
 		424C41C00D2DD6441B8909B4 /* Pods-ObviousTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObviousTest.release.xcconfig"; path = "Target Support Files/Pods-ObviousTest/Pods-ObviousTest.release.xcconfig"; sourceTree = "<group>"; };
 		4277F54F29265DA9000248F5 /* ImageDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewController.swift; sourceTree = "<group>"; };
 		4277F55029265DA9000248F5 /* ImageDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageDetailsViewController.xib; sourceTree = "<group>"; };
@@ -132,6 +152,15 @@
 				4229B918292775F900505EDA /* ImageDataInvalidResponse.json */,
 			);
 			path = MockNetworkResponses;
+			sourceTree = "<group>";
+		};
+		4229B91D2927877200505EDA /* OperationSessions */ = {
+			isa = PBXGroup;
+			children = (
+				42A580D8292501B500C5A317 /* APIOperationSession.swift */,
+				4229B91E2927878400505EDA /* MockAPIOperationSession.swift */,
+			);
+			path = OperationSessions;
 			sourceTree = "<group>";
 		};
 		4277F54E29265D58000248F5 /* ImageDetail */ = {
@@ -274,10 +303,10 @@
 		42A580CC2924FF6500C5A317 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				4229B91D2927877200505EDA /* OperationSessions */,
 				42A580D52925008700C5A317 /* APIModels */,
 				42A580D22925006C00C5A317 /* APIOperations */,
 				42A580CD2924FF7300C5A317 /* APIRequests */,
-				42A580D8292501B500C5A317 /* APIOperationSession.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -444,6 +473,7 @@
 				42A580962924F29700C5A317 /* Assets.xcassets in Resources */,
 				4277F55A2926673D000248F5 /* ImageDetailCollectionViewCell.xib in Resources */,
 				42A580942924F29600C5A317 /* Main.storyboard in Resources */,
+				4229B91C2927874800505EDA /* ImageDataCorrectResponse.json in Resources */,
 				4277F55229265DA9000248F5 /* ImageDetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +491,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4229B930292792C400505EDA /* ImageDataCorrectResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +606,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4277F55129265DA9000248F5 /* ImageDetailsViewController.swift in Sources */,
+				4229B91F2927878400505EDA /* MockAPIOperationSession.swift in Sources */,
 				42A580C22924FAC400C5A317 /* ImageGridCollectionViewCell.swift in Sources */,
 				42A580C92924FE1100C5A317 /* AppConstants.swift in Sources */,
 				4277F5592926673D000248F5 /* ImageDetailCollectionViewCell.swift in Sources */,
@@ -596,7 +628,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4229B92A29278BFB00505EDA /* APIOperation.swift in Sources */,
+				4229B92229278B8F00505EDA /* ImageGridViewModel.swift in Sources */,
 				42A580A42924F29700C5A317 /* ImageGridViewModelTests.swift in Sources */,
+				4229B92129278B8F00505EDA /* MockAPIOperationSession.swift in Sources */,
+				4229B92629278BC100505EDA /* APIOperationSession.swift in Sources */,
+				4229B92929278BFB00505EDA /* ImageGridModels.swift in Sources */,
+				4229B92E29278C1600505EDA /* ImageGridAPIRequest.swift in Sources */,
+				4229B92829278BFB00505EDA /* APIRequest.swift in Sources */,
+				4229B92529278B9400505EDA /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,7 +645,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				42A580B02924F29700C5A317 /* ObviousTestUITestsLaunchTests.swift in Sources */,
+				4229B92B29278BFC00505EDA /* APIRequest.swift in Sources */,
+				4229B92329278B9000505EDA /* MockAPIOperationSession.swift in Sources */,
+				4229B92029278B5E00505EDA /* AppConstants.swift in Sources */,
+				4229B92F29278C1700505EDA /* ImageGridAPIRequest.swift in Sources */,
 				42A580AE2924F29700C5A317 /* ObviousTestUITests.swift in Sources */,
+				4229B92C29278BFC00505EDA /* ImageGridModels.swift in Sources */,
+				4229B92429278B9000505EDA /* ImageGridViewModel.swift in Sources */,
+				4229B92D29278BFC00505EDA /* APIOperation.swift in Sources */,
+				4229B92729278BC100505EDA /* APIOperationSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
