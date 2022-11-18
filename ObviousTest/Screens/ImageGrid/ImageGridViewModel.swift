@@ -14,8 +14,8 @@ class ImageGridViewModel {
   let imageData = BehaviorRelay<[ImageData]?>(value: [])
   var currentIndex = 0
   
-  func fetchImageData() {
-    let operation = APIBaseOperation(ImageGridAPIRequest())
+  func fetchImageData(with sessionManager: APIOperationSession = URLSession.shared) {
+    let operation = APIBaseOperation(ImageGridAPIRequest(), sessionManager)
     operation.startRequest { result in
       switch result {
       case .success(let data):
@@ -27,6 +27,7 @@ class ImageGridViewModel {
           }
           self.imageData.accept(imageData)
         } catch {
+          self.imageData.accept(nil)
         }
       case .failure(_):
         self.imageData.accept(nil)

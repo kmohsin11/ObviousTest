@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4229B91429275EA200505EDA /* FeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4229B91329275EA200505EDA /* FeedbackGenerator.swift */; };
+		4229B919292775F900505EDA /* ImageDataInvalidResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 4229B918292775F900505EDA /* ImageDataInvalidResponse.json */; };
+		4229B91B2927760000505EDA /* ImageDataCorrectResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 4229B91A2927760000505EDA /* ImageDataCorrectResponse.json */; };
 		4277F55129265DA9000248F5 /* ImageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277F54F29265DA9000248F5 /* ImageDetailsViewController.swift */; };
 		4277F55229265DA9000248F5 /* ImageDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4277F55029265DA9000248F5 /* ImageDetailsViewController.xib */; };
 		4277F5592926673D000248F5 /* ImageDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277F5572926673D000248F5 /* ImageDetailCollectionViewCell.swift */; };
@@ -18,7 +20,7 @@
 		42A580942924F29600C5A317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A580922924F29600C5A317 /* Main.storyboard */; };
 		42A580962924F29700C5A317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42A580952924F29700C5A317 /* Assets.xcassets */; };
 		42A580992924F29700C5A317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A580972924F29700C5A317 /* LaunchScreen.storyboard */; };
-		42A580A42924F29700C5A317 /* ObviousTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580A32924F29700C5A317 /* ObviousTestTests.swift */; };
+		42A580A42924F29700C5A317 /* ImageGridViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580A32924F29700C5A317 /* ImageGridViewModelTests.swift */; };
 		42A580AE2924F29700C5A317 /* ObviousTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580AD2924F29700C5A317 /* ObviousTestUITests.swift */; };
 		42A580B02924F29700C5A317 /* ObviousTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580AF2924F29700C5A317 /* ObviousTestUITestsLaunchTests.swift */; };
 		42A580C22924FAC400C5A317 /* ImageGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580C02924FAC400C5A317 /* ImageGridCollectionViewCell.swift */; };
@@ -59,6 +61,8 @@
 		33AC8BB0B5715A3D441C82CD /* Pods-ObviousTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObviousTestTests.release.xcconfig"; path = "Target Support Files/Pods-ObviousTestTests/Pods-ObviousTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		3C663FE4CF950AE0C53CFE51 /* Pods-ObviousTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObviousTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ObviousTestTests/Pods-ObviousTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4229B91329275EA200505EDA /* FeedbackGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackGenerator.swift; sourceTree = "<group>"; };
+		4229B918292775F900505EDA /* ImageDataInvalidResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ImageDataInvalidResponse.json; sourceTree = "<group>"; };
+		4229B91A2927760000505EDA /* ImageDataCorrectResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ImageDataCorrectResponse.json; sourceTree = "<group>"; };
 		424C41C00D2DD6441B8909B4 /* Pods-ObviousTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObviousTest.release.xcconfig"; path = "Target Support Files/Pods-ObviousTest/Pods-ObviousTest.release.xcconfig"; sourceTree = "<group>"; };
 		4277F54F29265DA9000248F5 /* ImageDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewController.swift; sourceTree = "<group>"; };
 		4277F55029265DA9000248F5 /* ImageDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageDetailsViewController.xib; sourceTree = "<group>"; };
@@ -73,7 +77,7 @@
 		42A580982924F29700C5A317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42A5809A2924F29700C5A317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42A5809F2924F29700C5A317 /* ObviousTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObviousTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42A580A32924F29700C5A317 /* ObviousTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObviousTestTests.swift; sourceTree = "<group>"; };
+		42A580A32924F29700C5A317 /* ImageGridViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridViewModelTests.swift; sourceTree = "<group>"; };
 		42A580A92924F29700C5A317 /* ObviousTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObviousTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A580AD2924F29700C5A317 /* ObviousTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObviousTestUITests.swift; sourceTree = "<group>"; };
 		42A580AF2924F29700C5A317 /* ObviousTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObviousTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -121,6 +125,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4229B9152927722400505EDA /* MockNetworkResponses */ = {
+			isa = PBXGroup;
+			children = (
+				4229B91A2927760000505EDA /* ImageDataCorrectResponse.json */,
+				4229B918292775F900505EDA /* ImageDataInvalidResponse.json */,
+			);
+			path = MockNetworkResponses;
+			sourceTree = "<group>";
+		};
 		4277F54E29265D58000248F5 /* ImageDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,7 +203,8 @@
 		42A580A22924F29700C5A317 /* ObviousTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				42A580A32924F29700C5A317 /* ObviousTestTests.swift */,
+				4229B9152927722400505EDA /* MockNetworkResponses */,
+				42A580A32924F29700C5A317 /* ImageGridViewModelTests.swift */,
 			);
 			path = ObviousTestTests;
 			sourceTree = "<group>";
@@ -438,6 +452,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4229B91B2927760000505EDA /* ImageDataCorrectResponse.json in Resources */,
+				4229B919292775F900505EDA /* ImageDataInvalidResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,7 +596,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42A580A42924F29700C5A317 /* ObviousTestTests.swift in Sources */,
+				42A580A42924F29700C5A317 /* ImageGridViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
