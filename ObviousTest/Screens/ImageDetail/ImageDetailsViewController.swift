@@ -12,7 +12,7 @@ import Hero
 class ImageDetailsViewController: UIViewController {
   
   @IBOutlet var imageDetailCollectionView: UICollectionView!
-  let viewModel: ImageGridViewModel
+  private let viewModel: ImageGridViewModel
   
   init(_ vm: ImageGridViewModel) {
     viewModel = vm
@@ -34,7 +34,7 @@ class ImageDetailsViewController: UIViewController {
     imageDetailCollectionView.dataSource = self
     imageDetailCollectionView.register(UINib(nibName: ImageDetailCollectionViewCell.reuseIdentifier, bundle: .main), forCellWithReuseIdentifier: ImageDetailCollectionViewCell.reuseIdentifier)
     view.layoutIfNeeded()
-    imageDetailCollectionView.scrollToItem(at: IndexPath(item: viewModel.currentIndex, section: 0), at: .centeredHorizontally, animated: false)
+    imageDetailCollectionView.scrollRectToVisible(CGRect(x: CGFloat(viewModel.currentIndex) * AppConstants.getPhoneWidth, y: 0, width: AppConstants.getPhoneWidth, height: view.bounds.height), animated: false)
   }
 }
 

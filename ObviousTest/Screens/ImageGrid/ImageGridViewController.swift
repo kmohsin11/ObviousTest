@@ -13,8 +13,10 @@ class ImageGridViewController: UIViewController {
   
   @IBOutlet var imageCollectionview: UICollectionView!
   
-  let viewModel = ImageGridViewModel()
-  let disposeBag = DisposeBag()
+  private let viewModel = ImageGridViewModel()
+  private let disposeBag = DisposeBag()
+  private var initialPinchScale: CGFloat = 0
+  private var numberOfColumns: CGFloat = 3
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -34,6 +36,7 @@ class ImageGridViewController: UIViewController {
   }
   
   private func setupUI() {
+    view.addGestureRecognizer(UIPinchGestureRecognizer(target: self, action: #selector(pinchRecognized(_:))))
     isHeroEnabled = true
     navigationController?.isHeroEnabled = true
     navigationController?.heroNavigationAnimationType = .selectBy(presenting: .zoom, dismissing: .zoomOut)
@@ -52,6 +55,28 @@ class ImageGridViewController: UIViewController {
           
         }
       }).disposed(by: disposeBag)
+  }
+  
+  @objc func pinchRecognized(_ pinch: UIPinchGestureRecognizer) {
+    if pinch.state == .began {
+      initialPinchScale = pinch.scale
+    } else if pinch.state == .ended {
+      if pinch.scale > initialPinchScale {
+        numberOfColumns -= (numberOfColumns == 1) ? 0 : 1
+      } else {
+        numberOfColumns += 1
+      }
+      
+      let feedbackGenerator = UISelectionFeedbackGenerator()
+      feedbackGenerator.prepare()
+      feedbackGenerator.selectionChanged()
+      
+      imageCollectionview.alpha = 0.8
+      UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.8, options: UIView.AnimationOptions.curveEaseInOut, animations: {
+        self.imageCollectionview.alpha = 1
+        self.imageCollectionview.reloadSections(IndexSet(integer: 0))
+      }, completion: nil)
+    }
   }
 }
 
@@ -73,7 +98,7 @@ extension ImageGridViewController: UICollectionViewDelegate, UICollectionViewDat
   }
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    let width = AppConstants.getPhoneWidth/3 - 2
+    let width = AppConstants.getPhoneWidth/numberOfColumns - 2
     return CGSize(width: width, height: width)
   }
   
