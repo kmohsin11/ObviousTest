@@ -24,6 +24,7 @@ extension URLSession: APIOperationSession {
     if let url = operation.request.url {
       var urlRequest = URLRequest(url: url)
       urlRequest.httpMethod = operation.request.type.rawValue
+      urlRequest.cachePolicy = .reloadIgnoringLocalCacheData
       let dataTask = self.dataTask(with: urlRequest) { data, response, error in
         if let _ = error {
           completionHandler?(.failure(.networkFailure))

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4229B91429275EA200505EDA /* FeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4229B91329275EA200505EDA /* FeedbackGenerator.swift */; };
 		4277F55129265DA9000248F5 /* ImageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277F54F29265DA9000248F5 /* ImageDetailsViewController.swift */; };
 		4277F55229265DA9000248F5 /* ImageDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4277F55029265DA9000248F5 /* ImageDetailsViewController.xib */; };
 		4277F5592926673D000248F5 /* ImageDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277F5572926673D000248F5 /* ImageDetailCollectionViewCell.swift */; };
@@ -57,6 +58,7 @@
 		0891DB0E40C34B77CF96CA83 /* Pods-ObviousTest-ObviousTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObviousTest-ObviousTestUITests.release.xcconfig"; path = "Target Support Files/Pods-ObviousTest-ObviousTestUITests/Pods-ObviousTest-ObviousTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		33AC8BB0B5715A3D441C82CD /* Pods-ObviousTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObviousTestTests.release.xcconfig"; path = "Target Support Files/Pods-ObviousTestTests/Pods-ObviousTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		3C663FE4CF950AE0C53CFE51 /* Pods-ObviousTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObviousTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ObviousTestTests/Pods-ObviousTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4229B91329275EA200505EDA /* FeedbackGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackGenerator.swift; sourceTree = "<group>"; };
 		424C41C00D2DD6441B8909B4 /* Pods-ObviousTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObviousTest.release.xcconfig"; path = "Target Support Files/Pods-ObviousTest/Pods-ObviousTest.release.xcconfig"; sourceTree = "<group>"; };
 		4277F54F29265DA9000248F5 /* ImageDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewController.swift; sourceTree = "<group>"; };
 		4277F55029265DA9000248F5 /* ImageDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageDetailsViewController.xib; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				42A580C82924FE1100C5A317 /* AppConstants.swift */,
+				4229B91329275EA200505EDA /* FeedbackGenerator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				42A580D42925008300C5A317 /* APIOperation.swift in Sources */,
 				42A580D12925000900C5A317 /* ImageGridAPIRequest.swift in Sources */,
 				42A580CF2924FFB300C5A317 /* APIRequest.swift in Sources */,
+				4229B91429275EA200505EDA /* FeedbackGenerator.swift in Sources */,
 				42A580CB2924FF3A00C5A317 /* ImageGridViewModel.swift in Sources */,
 				42A580D9292501B500C5A317 /* APIOperationSession.swift in Sources */,
 			);

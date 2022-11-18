@@ -52,7 +52,7 @@ class ImageGridViewController: UIViewController {
         if let _ = imageData {
           self?.imageCollectionview.reloadData()
         } else {
-          
+          self?.showNetworkAlert()
         }
       }).disposed(by: disposeBag)
   }
@@ -67,9 +67,7 @@ class ImageGridViewController: UIViewController {
         numberOfColumns += 1
       }
       
-      let feedbackGenerator = UISelectionFeedbackGenerator()
-      feedbackGenerator.prepare()
-      feedbackGenerator.selectionChanged()
+      FeedbackGenerator.selection.triggerFeedback()
       
       imageCollectionview.alpha = 0.8
       UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.8, options: UIView.AnimationOptions.curveEaseInOut, animations: {
@@ -77,6 +75,16 @@ class ImageGridViewController: UIViewController {
         self.imageCollectionview.reloadSections(IndexSet(integer: 0))
       }, completion: nil)
     }
+  }
+  
+  func showNetworkAlert() {
+    FeedbackGenerator.error.triggerFeedback()
+    let alertController = UIAlertController(title: "Network Issue", message: "Please check your connection", preferredStyle: .alert)
+    let defaultAction = UIAlertAction(title: "Try Again", style: .cancel, handler: { [unowned self] action in
+      self.viewModel.fetchImageData()
+    })
+    alertController.addAction(defaultAction)
+    present(alertController, animated: true)
   }
 }
 
