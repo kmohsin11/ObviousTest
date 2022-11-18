@@ -75,8 +75,8 @@ class ImageGridViewController: UIViewController {
       
       FeedbackGenerator.selection.triggerFeedback()
       
-      imageCollectionview.alpha = 0.8
-      UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.8, options: UIView.AnimationOptions.curveEaseInOut, animations: {
+      imageCollectionview.alpha = 0.9
+      UIView.animate(withDuration: 0.5, delay: 0, options: UIView.AnimationOptions.curveEaseInOut, animations: {
         self.imageCollectionview.alpha = 1
         self.imageCollectionview.reloadSections(IndexSet(integer: 0))
       }, completion: nil)
@@ -109,7 +109,7 @@ extension ImageGridViewController: UICollectionViewDelegate, UICollectionViewDat
   }
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-    return 2
+    return 4
   }
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

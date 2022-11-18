@@ -29,6 +29,7 @@
 		4229B92E29278C1600505EDA /* ImageGridAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580D02925000800C5A317 /* ImageGridAPIRequest.swift */; };
 		4229B92F29278C1700505EDA /* ImageGridAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A580D02925000800C5A317 /* ImageGridAPIRequest.swift */; };
 		4229B930292792C400505EDA /* ImageDataCorrectResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 4229B91A2927760000505EDA /* ImageDataCorrectResponse.json */; };
+		4229B934292795B900505EDA /* image-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 4229B933292795B900505EDA /* image-loading.json */; };
 		4277F55129265DA9000248F5 /* ImageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277F54F29265DA9000248F5 /* ImageDetailsViewController.swift */; };
 		4277F55229265DA9000248F5 /* ImageDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4277F55029265DA9000248F5 /* ImageDetailsViewController.xib */; };
 		4277F5592926673D000248F5 /* ImageDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277F5572926673D000248F5 /* ImageDetailCollectionViewCell.swift */; };
@@ -83,6 +84,7 @@
 		4229B918292775F900505EDA /* ImageDataInvalidResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ImageDataInvalidResponse.json; sourceTree = "<group>"; };
 		4229B91A2927760000505EDA /* ImageDataCorrectResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ImageDataCorrectResponse.json; sourceTree = "<group>"; };
 		4229B91E2927878400505EDA /* MockAPIOperationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIOperationSession.swift; sourceTree = "<group>"; };
+		4229B933292795B900505EDA /* image-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "image-loading.json"; sourceTree = "<group>"; };
 		424C41C00D2DD6441B8909B4 /* Pods-ObviousTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObviousTest.release.xcconfig"; path = "Target Support Files/Pods-ObviousTest/Pods-ObviousTest.release.xcconfig"; sourceTree = "<group>"; };
 		4277F54F29265DA9000248F5 /* ImageDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewController.swift; sourceTree = "<group>"; };
 		4277F55029265DA9000248F5 /* ImageDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageDetailsViewController.xib; sourceTree = "<group>"; };
@@ -163,6 +165,22 @@
 			path = OperationSessions;
 			sourceTree = "<group>";
 		};
+		4229B9312927959800505EDA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4229B932292795A400505EDA /* LottieAnimations */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4229B932292795A400505EDA /* LottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				4229B933292795B900505EDA /* image-loading.json */,
+			);
+			path = LottieAnimations;
+			sourceTree = "<group>";
+		};
 		4277F54E29265D58000248F5 /* ImageDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +233,7 @@
 		42A5808B2924F29600C5A317 /* ObviousTest */ = {
 			isa = PBXGroup;
 			children = (
+				4229B9312927959800505EDA /* Resources */,
 				42A580CC2924FF6500C5A317 /* Network */,
 				42A580C72924FDD100C5A317 /* Utils */,
 				42A580BE2924FA7D00C5A317 /* Views */,
@@ -468,6 +487,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4229B934292795B900505EDA /* image-loading.json in Resources */,
 				42A580C32924FAC400C5A317 /* ImageGridCollectionViewCell.xib in Resources */,
 				42A580992924F29700C5A317 /* LaunchScreen.storyboard in Resources */,
 				42A580962924F29700C5A317 /* Assets.xcassets in Resources */,

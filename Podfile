@@ -11,6 +11,7 @@ target 'ObviousTest' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Hero'
+  pod 'lottie-ios'
 
   target 'ObviousTestTests' do
     inherit! :search_paths

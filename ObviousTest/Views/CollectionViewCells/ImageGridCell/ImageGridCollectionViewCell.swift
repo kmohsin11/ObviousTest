@@ -7,6 +7,9 @@
 
 import UIKit
 import Kingfisher
+import Lottie
+
+extension AnimationView: Placeholder {}
 
 class ImageGridCollectionViewCell: UICollectionViewCell, ReusableView {
   
@@ -17,11 +20,22 @@ class ImageGridCollectionViewCell: UICollectionViewCell, ReusableView {
   }
   
   func setupView(_ data: ImageData) {
-    imageView.kf.setImage(with: URL(string: data.url ?? ""))
+    let animationView = getAnimationView()
+    imageView.kf.setImage(with: URL(string: data.url ?? ""), placeholder: animationView)
+  }
+  
+  private func getAnimationView() -> AnimationView {
+    let animation = Animation.named("image-loading")
+    let animationView = AnimationView()
+    animationView.animation = animation
+    animationView.backgroundBehavior = .pauseAndRestore
+    animationView.loopMode = .loop
+    animationView.play()
+    return animationView
   }
   
   override func prepareForReuse() {
     super.prepareForReuse()
-    imageView.image = nil
+    imageView.kf.cancelDownloadTask()
   }
 }
